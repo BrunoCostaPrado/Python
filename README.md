@@ -1,2 +1,2 @@
 # Python
-Scripts em Python
+ Aprendizado de Python
