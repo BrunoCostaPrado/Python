@@ -1,4 +1,0 @@
-{
-    "DockerRun.DisableAutoGenerateConfig": true,
-    "python.formatting.provider": "black"
-}
