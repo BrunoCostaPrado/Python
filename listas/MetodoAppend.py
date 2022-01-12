@@ -12,9 +12,33 @@ while resp=="s":
     resp=input("Digite S para continuar: ").upper()
 
 
-for indice in range(0,len(equipamentos)):   
-    print("Equipamento..: ",(indice+1))
-    print("Nome.....:",equipamentos[indice])
-    print("Valor..."[indice])
-    print("Serial...:",seriais[indice])
-    print("Departamentos.:",departamentos[indice])
+for index in range(0,len(equipamentos)):   
+    print("Equipamento..: ",(index+1))
+    print("Nome.....:",equipamentos[index])
+    print("Valor..."[index])
+    print("Serial...:",seriais[index])
+    print("Departamentos.:",departamentos[index])
+
+
+
+
+busca=input("Digite o nome do equipamento: ")
+for index in range(0,len(equipamentos)):
+    if busca==equipamentos[index]:
+        print("valor..: ",valores[index])
+        print("seriais..: ",seriais[index])
+
+seriais=input("Insira o serial a ser excluido: ")
+for index in range(0,len(seriais)):
+    if seriais[index]==seriais:
+        del departamentos[index]
+        del equipamentos[index]
+        del seriais[index]
+        del valores[index]
+        break
+for index in range(0,len(equipamentos)):   
+    print("Equipamento..: ",(index+1))
+    print("Nome.....:",equipamentos[index])
+    print("Valor..."[index])
+    print("Serial...:",seriais[index])
+    print("Departamentos.:",departamentos[index])
