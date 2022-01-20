@@ -3,5 +3,11 @@ with open("teste.txt","w") as arquivo:
 
 
 
+with open("teste.txt","a") as arquivo:
+    arquivo.write("\nContinação do texto.")
+
+
 with open("teste.txt","r") as arquivo:
-    arquivo.read()
+   conteudo=arquivo.read()
+print("Tipo de dado da varialvel",type(conteudo))
+print("Conteudo do arquivo",conteudo)
