@@ -1,6 +1,3 @@
-from cgitb import reset
-
-
 inventario={}
 opcao=int(input("Digite: "
 "<1> para  registar ativo"
@@ -11,9 +8,9 @@ while opcao>0 and opcao<4:
         resp="S"
         while resp=="S":
             inventario[input("Digite um numero ")]=[
-                input("digite a data da ultima atualização: ")  ,
-                input("Digite a descrição: "),
-                input("Digite o departamento: ")]
+            input("digite a data da ultima atualização: ")  ,
+            input("Digite a descrição: "),
+            input("Digite o departamento: ")]
             resp=input("Digite <S> para continuar.").upper()
     elif opcao==2:
         with open("Inventario.csv","a") as inv:
@@ -21,7 +18,7 @@ while opcao>0 and opcao<4:
                 inv.write(chave+";"+valor[0]+";"+valor[1]+";"+valor[2]+"")
                 print("Persistido com sucesso!")
     elif opcao==3:
-        with open("Inventario.csv","a")as inv:
+        with open("Inventario.csv","r")as inv:
             print(inv.readlines())
     opcao=int(input("Digite: "
     "<1> para registrar ativo"
