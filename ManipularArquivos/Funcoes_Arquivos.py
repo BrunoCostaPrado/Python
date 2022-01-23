@@ -1,8 +1,9 @@
 def chamarMenu():
-    escolha=int(input("Digite: "
-"<1> para  registar ativo"
-"<2> para persisitir em arquivo"
-"<3> para exibir ativos armazenados:"))
+    escolha=int(input("\nDigite:\n"
+    "<1> para  registar ativo\n"
+    "<2> para persisitir em arquivo\n"
+    "<3> para exibir ativos armazenados\n"))
+    return escolha
 
 def registrar(dicionario):
     resp="S"
@@ -12,6 +13,7 @@ def registrar(dicionario):
             input("Digite a descrição: "),
             input("Digite o departamento: ")]
         resp=input("Digite <S> para continuar.").upper()
+
 
 
 

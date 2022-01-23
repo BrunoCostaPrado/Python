@@ -1,16 +1,4 @@
-# from Funcao.Funcao_Arquivos import *
-# inventario={}
-# opcao=chamarMenu()
-# while opcao>0 and opcao<4:
-#     if opcao==1:
-#         registrar(inventario)
-#     elif opcao==2:
-#         registrar(inventario)
-#     elif opcao==3:
-#         print(exibir())
-#     opcao=chamarMenu()
-
-from Funcao.Funcao_Arquivos import *
+from Funcoes_Arquivos import *
 inventario={}
 opcao=chamarMenu()
 while opcao>0 and opcao<4:
@@ -19,5 +7,10 @@ while opcao>0 and opcao<4:
     elif opcao==2:
         persistir(inventario)
     elif opcao==3:
-        print(exibir())
-    opcao = chamarMenu()
+        resultado=exibir()
+        for linha in resultado:
+            lista=linha.split(";")
+            print("Data.........: ", lista[1])
+            print("Descrição....: ", lista[2])
+            print("Departamento.: ", lista[3])
+opcao = chamarMenu()

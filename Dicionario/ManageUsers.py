@@ -1,4 +1,4 @@
-from Funcao.Funcoes_Dicionario import *
+from Funcoes.Funcoes_Dicionario import *
 usuarios={}
 opcao=perguntar()
 while opcao=="I" or opcao=="P" or opcao=="E" or opcao=="L" :
