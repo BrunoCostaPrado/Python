@@ -1,3 +1,5 @@
 
 .vscode/settings.json
 ManipularArquivos/__pycache__/
+*.pyc
+Wazeyes/__pycache__/Funcoes_JSON.cpython-310.pyc
