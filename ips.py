@@ -1,7 +1,6 @@
 import socket
 import requests
 
-
 ip_local = socket.gethostbyname(socket.gethostname())
 print(f'IP Local: {ip_local}')
 
